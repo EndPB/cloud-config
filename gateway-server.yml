@@ -13,7 +13,7 @@ spring:
             lb://ai-service
 
           predicates:
-            - Path=/ai/**
+            - Path=/AI/**
 
           filters:
             - RewritePath=/ai/(?<path>.*),/$\{path}
