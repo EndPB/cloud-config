@@ -9,9 +9,7 @@ spring:
           lower-case-service-id: true
       routes:
         - id: ai-service
-          uri:
-            lb://ai-service
-
+          uri: lb://ai-service
           predicates:
             - Path=/AI/**
 
