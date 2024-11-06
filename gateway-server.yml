@@ -11,10 +11,10 @@ spring:
         - id: ai-service
           uri: lb://ai-service
           predicates:
-            - Path=/AI/**
+            - Path=/ai/**
 
           filters:
-            - RewritePath=/AI/(?<path>.*),/$\{path}
+            - RewritePath=/ai/(?<path>.*),/$\{path}
 eureka:
   instance:
     prefer-ip-address: true
