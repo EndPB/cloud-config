@@ -12,7 +12,7 @@ spring:
           uri: lb://ai-service
           predicates:
             - Path=/ai/**
-
+            - Path=/ai
           filters:
             - RewritePath=/ai/(?<path>.*),/$\{path}
 eureka:
