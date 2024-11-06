@@ -14,7 +14,7 @@ spring:
             - Path=/AI/**
 
           filters:
-            - RewritePath=/ai/(?<path>.*),/$\{path}
+            - RewritePath=/AI/(?<path>.*),/$\{path}
 eureka:
   instance:
     prefer-ip-address: true
