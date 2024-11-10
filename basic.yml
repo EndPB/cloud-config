@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: basic
+  datasource:
+    url: jdbc:mysql://localhost/whms-basic
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    generate-unique-name: false
+    name: whms-basic
+    username: root
+    password: JIANYUAN20050626@qq
+  jpa:
+    hibernate:
+      ddl-auto: update
+  security:
+    oauth2:
+      resource-server:
+        jwt:
+          jwk-set-uri: http://authserver:9000/oauth2/jwks
+  data:
+    rest:
+      base-path: /api
+server:
+  port: 8080
+logging:
+  pattern:
+    level: debug
+whms:
+  baidu:
+    baidu-ak: hUMey3jOPfHRFSWcL241NzhXO8YeJdG3
+    baidu-sk: qh3BmNo4PYPzC1bzmTSTNydiwPU5eRQ1

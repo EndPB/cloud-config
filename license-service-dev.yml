@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: license-service
+  datasource:
+    url: jdbc:mysql://localhost/license_service
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    generate-unique-name: false
+    name: license_service
+    username: root
+    password: JIANYUAN20050626@qq
+#  jpa:
+#    hibernate:
+#      ddl-auto: create-drop
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://127.0.0.1:8070/eureka/
+server:
+  port: 8081
